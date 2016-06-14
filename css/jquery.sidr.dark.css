@@ -1,0 +1,83 @@
+.sidr {
+	display: none;
+	position: absolute;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	z-index: 999999;
+	width: 260px;
+	overflow-x: none;
+	overflow-y: auto;
+	font-size: 15px;
+	background: #136688;
+	color: #fff;
+	-webkit-box-shadow: -6px -6px 5px 0px rgba(0,49,79,.7) inset;
+	-moz-box-shadow: -6px -6px 5px 0px rgba(0,49,79,1) inset;
+	-ms-box-shadow: -6px -6px 5px 0px rgba(0,49,79,1) inset;
+	-o-box-shadow: -6px -6px 5px 0px rgba(0,49,79,1) inset;
+	box-shadow: -6px -6px 5px 0px rgba(0,49,79,.7) inset;
+}
+.sidr .sidr-inner {
+	padding: 0 0 15px;
+}
+.sidr .sidr-inner>p {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.sidr.right {
+	left: auto;
+	right: -260px;
+}
+.sidr.left {
+	left: -260px;
+	right: auto;
+}
+.sidr ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #1a1a1a;
+	border-bottom: 1px solid #4d4d4d;
+	width:100%;
+	float:left;
+}
+.sidr ul li {
+	display: block;
+	margin: 0;
+	line-height: 48px;
+	border-top: 1px solid #002c4a;
+	border-bottom: 1px solid #458db0;
+	width:100%;
+}
+.sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active {
+	border-top: none;
+	line-height: 49px;
+}
+.sidr ul li:hover>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span {
+	-webkit-box-shadow: inset 0 0 15px 3px rgba(0,49,79,.4);
+	-moz-box-shadow: inset 0 0 15px 3px rgba(0,49,79,.4);
+	-ms-box-shadow: inset 0 0 15px 3px rgba(0,49,79,.4);
+	-o-box-shadow: inset 0 0 15px 3px rgba(0,49,79,.4);
+	box-shadow: inset 0 0 15px 3px rgba(0,49,79,.4);
+}
+.sidr ul li a, .sidr ul li span {
+	padding: 0 15px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+.sidr ul li ul {
+	border-bottom: none;
+	margin: 0;
+}
+.sidr ul li ul li {
+	line-height: 40px;
+	font-size: 13px;
+}
+.sidr ul li ul li:last-child {
+	border-bottom: none;
+}
+
+
+
+

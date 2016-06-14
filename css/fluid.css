@@ -1,0 +1,955 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #595959;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-weight:300;
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #3265c6;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #666;
+}
+
+h2, h3, h4 {
+    font-weight: 300;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.sprite { 
+    background-image:url(../images/sprite.png); 
+    background-repeat:no-repeat;
+    background-color:transparent;
+}
+
+/* --- Navbar CSS Starts Here --- */
+.navbar {
+    background-color: #FFC800;
+    padding: 5px 0;
+    min-height: 57px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 15px;
+    top: 1px;
+}
+
+.logo a {
+    display: block;
+    width: 199px;
+    height: 41px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 99;
+}
+
+.btn-login {
+    background-color:transparent;
+    border: 0 none;
+    color: #333;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #F2F2F2;
+}
+
+nav {
+    margin-top: 6px;
+    padding-left: 200px;
+    position: relative;
+}
+
+nav ul {
+    float: left;
+    margin-top: 11px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #333;
+    font-weight: 300;
+    padding: 0 22px;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color:#136688;
+}
+
+.sign_up {
+    color: #FFF;
+    margin-top: 5px;
+    float: right;
+}
+
+.sign_up .form-control {
+    border: 0 none;
+    border-radius: 0;
+    font-size: 12px;
+    height: 27px;
+    margin: 0 5px 0 0;
+    padding: 3px 10px;
+    width: 110px;
+}
+
+.register {
+    border: 1px solid #413D32;
+    border-radius: 4px;
+    padding: 5px 15px;
+    text-align: center;
+    color: #333;
+    margin-left: 15px;
+}
+
+
+
+/* --- Banner CSS Starts Here --- */
+.home_banner {
+    background-color: #dfedf0;
+    position: relative;
+    height: 355px;
+}
+
+.home_banner iframe {
+    width: 100% !important;
+}
+
+.home_banner iframe body #google_image_div .img_ad {
+    width: 100% !important;
+    height: auto;
+}
+
+.banner-content {
+    margin: 0 auto;
+    padding-left: 300px;
+    position: relative;
+}
+
+.banner-content small {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.banner-text {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+
+.banner-text span {
+    color: #FFC800;
+}
+.banner-text span span {
+    left: 5px;
+    position: relative;
+    top: -12px;
+}
+
+.btn-register {
+    background-color: #ffc800;
+    border-radius: 4px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px 20px;
+    text-align: center;
+    border: 0 none;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+.w100fl {
+    width: 100%;
+    float: left;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.sikandar-box {
+    border: 1px solid #F9F9F9;
+    padding: 30px;
+    height: 210px
+}
+
+.main-head {
+    border-left: 3px solid #ff8001;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+    margin: 0 0 25px;
+}
+
+.grey-bg {
+    background-color: #F9F9F9;
+}
+
+.sod {
+    position: relative;
+    padding-left: 125px;
+}
+
+.sod span {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.sod span img {
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+}
+
+.sikandar-box h3, .sikandar-box h4 {
+    margin:0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sikandar-box p {
+    margin: 0;
+    font-weight: 300;
+}
+
+.ribbon {
+    background-image: url("../images/ribbon.png");
+    background-size: 100% 100%;
+    display: block;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 15px;
+    text-align: center;
+    font-weight: 400 !important;
+    margin-top: 10px !important;
+    font-size: 17px;
+}
+
+.about-us {
+    background-color: #FFF4CC;
+}
+
+.about-us a {
+    font-weight: 400;
+}
+
+
+.participate-box {
+    position: relative;
+    padding-left: 130px;
+    margin: 25px 0;
+
+}
+
+.participate-box span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 105px;
+    height: 105px;
+    background-color: #FFE480;
+    border-radius: 100%;
+    display: block;
+    background-image: url("../images/icon-sprite.png");
+
+}
+
+.participate-box p {
+    margin: 0;
+    line-height: 25px;
+    color: #666;
+}
+.participate-box p a {
+    color: #3265C6;
+}
+
+.participate-box strong {
+    font-weight: 400;
+}
+
+.search-ico {
+    background-position: -108px 0;
+}
+
+.win-ico {
+    background-position: -216px 0;
+}
+
+.playAgain-ico {
+    background-position: -324px 0;
+}
+
+.participate-head {
+    font-weight: 400;
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #666;
+}
+
+.participate-head strong {
+    font-weight: 600;
+}
+
+
+.shine-mini {
+    background-color: #F2F2F2;
+}
+
+.tnc {
+    padding: 0 0 0 15px;
+    margin: 0;
+
+}
+
+.tnc li {
+    list-style-type: disc;
+    color: #666;
+    margin-bottom: 10px;   
+}
+
+
+.fixed, .sticky {
+  position: fixed;
+  top:0; 
+  left:0;
+  width: 100%;
+  z-index:99;
+}
+
+.wrapper {
+    padding-top: 57px;
+}
+
+.sticky-bottom {
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.sticky-bottom .form-group {
+    float: left;
+    margin: 0 5px;
+    width: 38%;
+}
+
+.inner-banner {
+    background-color:#EFF3F3;
+    background-image: url("../images/inner-banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 135px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 2000px;
+}
+
+.inner-banner h1 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.content {
+    font-size: 15px;
+    line-height: 28px;
+    color: #666;
+}
+
+.content h2 {
+    margin-top: 20px;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.jd-list {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+.jd-list li {
+    width: 100%;
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.jd-list li span {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.jd-list li span:first-child {
+    width: 250px;
+}
+
+.register-form {
+    margin: 0 auto
+}
+
+.register-form li {
+    margin-bottom: 20px;
+}
+
+.sikandar-logo {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 5%;
+    top: -23px;
+    width: 101px;
+}
+
+.rel {
+    position: relative;
+}
+
+.coming-soon {
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 9999;
+}
+
+.coming-soon h2 {
+    margin: -10px 0 15px;
+    font-size: 30px;
+}
+
+.coming-img {
+    width: 150px;
+    display: inline-block;
+    margin: 0;
+}
+
+.coming-soon .coming-container {
+    background-color: #fff;
+    height: 320px;
+    left: 50%;
+    margin: -160px 0 0 -275px;
+    padding: 20px 30px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 550px;
+}
+
+
+.tnc-list {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+
+.tnc-list li {
+    margin-bottom: 15px;
+    list-style-type: disc;
+	margin-left:35px;
+}
+
+.tnc-list > li:nth-child(2){ list-style-type:none; font-weight:bold; margin:0px; padding:13px 0 10px 0;}
+.tnc-list > li:nth-child(14){ list-style-type:none; font-weight:bold; margin:0px; padding:13px 0 10px 0;}
+.tnc-list > li:nth-child(20){ list-style-type:none; font-weight:bold; margin:0px; padding:13px 0 10px 0;}
+
+
+
+.thank-you {
+    width: 400px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.thank-you h2 {
+    font-size: 25px;
+    color: #666;
+    font-weight: 300;
+    margin-top: -5px;
+}
+
+/* timer */
+
+.timer-wrap {
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    z-index: 1;
+    text-align: center;
+    
+}
+.timer{
+    font-size: 24px;
+    line-height: 25px
+}
+.timer-con{
+    padding: 2px 5px;
+    background-color: #CD2D2F;
+    color: #fff;
+    position: relative;
+}
+.timer-details{
+       font-size: 12px;
+    margin-left: 3px;
+    text-align: center;
+    margin-top: 2px;
+    opacity: 0.5;
+}
+/* ribbon */
+
+.marginBottom-0 {
+    margin-bottom: 0;
+}
+
+/* form */
+.form{
+    position: fixed;
+    top: 57px;
+    z-index: 9;
+    display: block;
+    right: 5px;
+    padding: 20px;
+    background: #fff;
+    transition: all 500ms ease-in-out;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.btn-block{
+    width: 100%;
+    display: block;
+}
+
+.btn-inline{
+    width: 49%;
+    display: inline-block; 
+}
+.btn-form{
+    background: #FFC800;
+    color: #000;
+    border: 0;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}
+.btn-newreg{
+        background: #fff;
+        color: #000;
+        border: 0;
+        padding: 6px 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-bottom: 1px solid #FFC800;
+        text-align: center;
+}
+.btn-newreg:hover{
+    color: #000;outline: none;
+}
+.forgot-password{
+    color: #069;
+    display: block;
+    font-weight: 400;
+    text-align: center;
+}
+.check-box{
+    color: #1c3553;
+    font-weight: 400;
+}
+.check-box input[type=checkbox]{
+    position: relative;
+    top: 2px;
+}
+
+/* small menu */
+.small-menu{
+    display: inline-block;
+    width: 25px;
+    margin-left: 10px;
+    position: relative;
+    top: 8px;
+    right: -20px
+}
+.small-menu span{
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    display: block;
+}
+.small-menu span + span{
+    margin-top: 4px;
+}
+.small-manu-con{
+    position: fixed;
+    top: 50px;
+    z-index: 9;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+
+}
+.small-manu-con li{
+    
+}
+.small-manu-con li a{
+    padding: 10px 0;
+    display: block;
+    color: #333;
+    font-weight: bold;
+}
+#error_msg{
+    padding-bottom: 5px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.error{
+    background: #ffefef !important;
+    color: #f00 !important;
+    border: solid 1px #f00 !important;
+}
+/*--- Media Query starts Here --- */
+.already{
+    display: none;
+}
+
+.gray--scale{
+    background: #e7e7e7;
+}
+@media (min-width: 768px) {
+    .banner-content {
+        width: 730px;
+    }
+
+    .banner-text {
+        font-size: 22px;
+    }
+
+    nav {
+        padding-left: 140px;
+    }
+
+    .logo a {
+        width: 140px;
+        height: 55px;
+    }
+
+    nav ul {
+        margin-top: 5px;
+    }
+
+    .sikandar-box {
+        margin-bottom: 30px;
+    }
+
+    .register-form {
+        width: 520px;
+    }
+
+    .form{
+        right: 120px;
+    }
+}
+@media (min-width: 992px) {
+    .banner-content {
+        width: 930px;
+    }
+
+    .banner-text {
+        font-size: 28px;
+    }
+
+    .banner-text {
+        padding-top: 45px;
+    }
+    .logo a {
+        width: 129px;
+        height: 51px;
+    }
+
+    .sikandar-box {
+        margin-bottom: 0;
+    }
+
+    nav {
+        padding-left: 130px;
+    }
+
+    nav ul {
+        margin-top: 5px;
+    }
+    
+    .ribbon {
+        font-size: 15px;
+        width: 250px;
+    }
+    .already{
+        display: inline-block;
+        color: #000;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .banner-content {
+        width: 1070px;
+        margin-top: 35px
+    }
+
+    .banner-text {
+        font-size: 30px;
+    }
+
+
+    .ribbon {
+        font-size: 17px;
+        width: 291px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .logo {
+        position: absolute;
+        left: 15px;
+        top: 3px;
+    }
+
+    .logo a {
+        width: 110px;
+        height: 43px;
+    }
+    nav ul li a:hover {
+        text-decoration: none;
+        color:#fff;
+    }
+
+    .navbar {
+        padding: 0;
+        min-height: 50px;
+    }
+
+  
+    #mobile-header {
+        display: none;
+    }
+
+   
+
+    nav {
+        padding: 0;
+        height: auto;
+        margin-top: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .sidr-class-sign_up {
+        width: 100%;
+        float: left;
+    }
+
+    .home_banner {
+        height: auto;
+        background-color: #E9F2F3;
+        background-image: none;
+        padding-bottom: 20px;
+    }
+
+    .banner-content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .banner-content small {
+        display: inline-block;
+        left: auto;
+        position: relative;
+        top: 20px;
+    }
+
+    .banner-text {
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 0;
+    }
+
+    .participate-box {
+        padding-left: 0;
+    }
+
+    .sikandar-box {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .sod {
+        padding-left: 0;
+    }
+
+    .btn-login, .register {
+        position: relative;
+        top: 4px;
+    }
+
+    .register-form {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .inner-banner {
+        height: 100px;
+    }
+
+    .inner-banner h1 {
+        font-size: 22px;
+    }
+
+    .inner-banner p {
+        font-size: 14px;
+    }
+
+    .thank-you {
+        width: 290px;
+        margin: 40px auto;
+    }
+    .form{
+        top: 50px;
+    }
+}
+
+@media (max-width: 480px){
+    .ad-overflow{
+        overflow: hidden;
+    }
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+
+.font-16 {
+    font-size:16px !important;
+}
+
+.font-light {
+    font-weight: 300 !important;
+}
+
+.c9 {
+    color: #999 !important;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.c6 {
+    color: #666 !important;
+}
+
+.font-15 {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.font-20 {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.line-height-30 {
+    line-height: 30px;
+}
+
+.marginBottom-10 {
+    margin-bottom: 10px !important;
+}
+
+.marginTop-30 {
+    margin-top: 30px !important;
+}
+
+.paddinBottom-75 {
+    padding-bottom: 75px !important;
+}
+
+.marginBottom-15 {
+    margin: 0 0 15px;
+}
+
+.paddingTop-30 {
+    padding-top: 20px !important;
+}
