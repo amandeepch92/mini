@@ -43,7 +43,7 @@
                             <div class="sign_up col-lg-5">
                                 <div class="form-inline text-right">
                                     <span class="already">Already Registered?</span>
-                                    <button type="submit" class="btn-login">Login</button>
+                                    <button type="submit" class="btn-login cls_login" data-toggle="modal" data-target=".bs-example-modal-sm">Login</button>
                                     <a href="http://lmsonline.co.in/media/shinemini/register.html" class="register">Register</a>
                                     <a href="javascript:void(0)" class="small-menu hidden-sm hidden-md hidden-lg">
                                         <span></span>
@@ -157,6 +157,47 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+         <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                       <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="login-form" id="loginFrm">
+                        <form action="http://recruiter.shine.com/" id="login" method="post" target="_blank">
+                            <div class="form-group">
+                                <input name="username" required="required" title="username" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" required="required" class="form-control" placeholder="Passsword">
+                            </div>
+                            <button type="submit" class="btn-form btn-block">Login</button>
+                            <div class="">
+                                <a href="javascript:void(0)" class="forgot-password">Forgot Password</a>
+                            </div>
+                            <a href="http://lmsonline.co.in/media/shinemini/register.html" class="btn-newreg btn-block">New User? Register now</a>
+                        </form>
+                    </div>
+                    <div class="forget-form" id="id_forgetform" style="display: none;">
+                        <form action="#" id="id_forgetpassword_form" method="post" onsubmit="return false;">
+                            <div class="form-group">
+                                Enter username
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="id_username" name="username" required="required" title="" class="form-control" placeholder="Username">
+                            </div>
+                            <button class="btn-form btn-inline" id="id_forgetpassword">Submit</button>
+                            <button class="btn-form btn-inline" id="btnCancel">Cancel</button>
+                        </form>
+                        <div id="error_msg"></div>
+                    </div>
+                 </div>
+            </div>
+         </div>
+    </div>
     <!-- Wrapper ends here -->
     <div class="small-manu-con" style="display: none;">
         <ul class="col-xs-12">
@@ -166,41 +207,10 @@
             <li><a href="http://lmsonline.co.in/media/shinemini/faqs.html" class="tnc">FAQs</a></li>
         </ul>
     </div>
-    <div class="form" style="display: none;">
-        <div class="login-form" id="login-frm">
-            <form action="http://recruiter.shine.com/" id="login" method="post" target="_blank">
-                <div class="form-group">
-                    <input name="username" required="required" title="username" class="form-control" placeholder="username">
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" required="required" class="form-control" placeholder="Passsword">
-                </div>
-                <div class="form-group check-box">
-                    <input type="checkbox" class=""> Keep me signed in
-                </div>
-                <button type="submit" class="btn-form btn-block">Login</button>
-                <div class="">
-                    <a href="javascript:void(0)" class="forgot-password">Forgot Password</a>
-                </div>
-            </form>
-        </div>
-        <div class="forget-form" id="id_forgetform" style="display: none;">
-            <form action="#" id="id_forgetpassword_form" method="post" onsubmit="return false;">
-                <div class="form-group">
-                    Enter username
-                </div>
-                <div class="form-group">
-                    <input type="text" id="id_username" name="username" required="required" title="" class="form-control" placeholder="Username">
-                </div>
-                <button class="btn-form btn-inline" id="id_forgetpassword">Submit</button>
-                <button class="btn-form btn-inline" id="btnCancel">Cancel</button>
-            </form>
-            <div id="error_msg"></div>
-        </div>
-    </div>
     <a class="cd-top" href="#0">Top</a>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/jquery.sidr.min.js"></script>
     <script src="js/base.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
